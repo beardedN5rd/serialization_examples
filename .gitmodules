@@ -1,0 +1,18 @@
+[submodule "third_party/avro"]
+	path = third_party/avro
+	url = https://github.com/apache/avro.git
+[submodule "third_party/thrift"]
+	path = third_party/thrift
+	url = https://github.com/apache/thrift.git
+[submodule "third_party/grpc"]
+	path = third_party/grpc
+	url = https://github.com/grpc/grpc.git
+[submodule "third_party/capnproto"]
+	path = third_party/capnproto
+	url = https://github.com/capnproto/capnproto.git
+[submodule "third_party/protobuf"]
+	path = third_party/protobuf
+	url = https://github.com/google/protobuf.git
+[submodule "third_party/ice"]
+	path = third_party/ice
+	url = https://github.com/zeroc-ice/ice.git
