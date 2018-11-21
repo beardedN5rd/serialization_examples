@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd IaC
+docker build -f Dockerfile\
+		-t avro/test:latest\
+		--build-arg flavor=avro .

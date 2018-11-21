@@ -1,0 +1,15 @@
+---
+   - name: install required packages
+     apt: name={{ item }} state=present
+     with_items:
+       - autoconf
+       - automake
+       - clang
+       - curl
+       - g++
+       - libtool
+       - make
+       - pkg-config
+       - python-pip
+       - unzip
+

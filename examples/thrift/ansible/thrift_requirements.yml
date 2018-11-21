@@ -1,0 +1,31 @@
+---
+   - name: Installs automake
+     apt: pkg=automake state=installed
+
+   - name: Installs make
+     apt: pkg=make state=installed
+
+   - name: Installs g++
+     apt: pkg=g++ state=installed
+
+   - name: Installs bison
+     apt: pkg=bison state=installed
+
+   - name: Installs flex
+     apt: pkg=flex state=installed
+
+   - name: Installs libboost1.55-all-dev
+     apt: pkg=libboost1.55-all-dev state=installed
+
+   - name: Installs libevent-dev
+     apt: pkg=libevent-dev state=installed
+
+   - name: Installs libssl-dev
+     apt: pkg=libssl-dev state=installed
+
+   - name: Installs libtool
+     apt: pkg=libtool state=installed
+
+   - name: Installs pkg-config
+     apt: pkg=pkg-config state=installed
+

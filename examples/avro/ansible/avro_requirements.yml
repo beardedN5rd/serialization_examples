@@ -1,0 +1,66 @@
+---
+   - name: install required packages for Java
+     apt: name={{ item }} state=present
+     with_items:
+       - openjdk-6-jdk
+       - maven2
+       - protobuf-compiler
+
+   - name: install required packages for PHP
+     apt: name={{ item }} state=present
+     with_items:
+       - php5
+       - phpunit
+       - php5-gmp
+
+   - name: install required packages for Python
+     apt: name={{ item }} state=present
+     with_items:
+       - python
+       - python-setuptools
+
+   - name: install required packages for C
+     apt: name={{ item }} state=present
+     with_items:
+       - gcc
+       - cmake
+       - asciidoc
+       - source-highlight
+
+   - name: install required packages for C++
+     apt: name={{ item }} state=present
+     with_items:
+       - g++
+       - cmake
+       - flex
+       - bison
+       - libboost-dev
+
+   - name: install required packages for C#
+     apt: name={{ item }} state=present
+     with_items:
+       - mono-devel
+       - mono-gmcs
+       - nunit
+
+   - name: install required packages for Javascript
+     apt: name={{ item }} state=present
+     with_items:
+       - nodejs
+       - npm
+
+   - name: install required packages for ruby
+     apt: name={{ item }} state=present
+     with_items:
+       - ruby
+       - ruby-dev
+       - gem
+       - rake
+       - echoe
+       - yajl-ruby
+
+   - name: install required packages for perl
+     apt: name={{ item }} state=present
+     with_items:
+       - perl
+       - gmake

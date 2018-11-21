@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: yes
+  become_method: sudo
+
+  tasks:
+   - include: base.yml
+   - include: thrift_requirements.yml
+

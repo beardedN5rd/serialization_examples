@@ -16,6 +16,3 @@
 [submodule "third_party/ice"]
 	path = third_party/ice
 	url = https://github.com/zeroc-ice/ice.git
-[submodule "IaC/scripts"]
-	path = IaC/scripts
-	url = https://github.com/beardedN5rd/prepare4ansible.git

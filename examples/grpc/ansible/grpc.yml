@@ -1,0 +1,12 @@
+---
+   - name: Installs autoconf
+     apt: pkg=autoconf state=installed
+
+   - name: Installs clang
+     apt: pkg=clang state=installed
+
+   - name: Installs libtool
+     apt: pkg=libtool state=installed
+
+   - name: Installs make
+     apt: pkg=make state=installed

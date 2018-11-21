@@ -1,0 +1,21 @@
+---
+   - name: install required packages
+     apt: name={{ item }} state=present
+     with_items:
+       - g++
+       - make
+       - libssl-dev
+       - libmcpp-dev
+       - libbz2-dev
+       - libexpat1-dev
+       - liblmdb-dev
+       - libbluetooth-dev
+       - libdbus-1-dev
+       - openjdk-7-jdk
+       - libpython2.7-dev
+       - npm
+       - python-pip
+       - rubygems-integration 
+       - zeroc-ice-all-runtime
+       - zeroc-ice-all-dev  
+
