@@ -1,6 +1,22 @@
 #!/bin/bash
 
-cd IaC
-docker build -f Dockerfile\
-		-t avro/test:latest\
-		--build-arg flavor=avro .
+function prepare_example
+{
+		flavor=${1##*/}
+	  echo ${flavor}
+
+		docker build -f Dockerfile\
+				-t ${flavor}/test:latest\
+				--build-arg flavor=${flavor} .
+}
+
+function iterate_examples
+{
+  examples="./examples/"
+  for dir in ${examples}*
+  do
+    prepare_example ${dir}
+  done
+}
+
+iterate_examples
