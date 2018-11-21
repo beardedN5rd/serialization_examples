@@ -1,3 +1,21 @@
 [submodule "scripts"]
 	path = scripts
 	url = https://github.com/beardedN5rd/prepare4ansible.git
+[submodule "examples/avro/third_party"]
+	path = examples/avro/third_party
+	url = https://github.com/apache/avro.git
+[submodule "examples/capnproto/third_party"]
+	path = examples/capnproto/third_party
+	url = https://github.com/capnproto/capnproto.git
+[submodule "examples/grpc/third_party"]
+	path = examples/grpc/third_party
+	url = https://github.com/grpc/grpc.git
+[submodule "examples/ice/third_party"]
+	path = examples/ice/third_party
+	url = https://github.com/zeroc-ice/ice.git
+[submodule "examples/protobuf/third_party"]
+	path = examples/protobuf/third_party
+	url = https://github.com/google/protobuf.git
+[submodule "examples/thrift/third_party"]
+	path = examples/thrift/third_party
+	url = https://github.com/apache/thrift.git
